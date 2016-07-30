@@ -1,0 +1,139 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background:url(./image/main-background.jpg);
+	margin: 0;
+	padding: 0;
+	color: #f9f9f9;
+	background: #f0f0f0;
+}
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    z-index: 1;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropdown-btn {
+    display: inline-block;
+    width: 200px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropdown-btn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+
+nav li .dropdown-btn::before,
+nav li .dropdown-btn::after {
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+nav li .dropdown-btn::before {
+	content: '[';
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+nav li .dropdown-btn::after {
+	content: ']';
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+nav li .dropdown-btn:hover::before,
+nav li .dropdown-btn:hover::after,
+nav li .dropdown-btn:focus::before,
+nav li .dropdown-btn:focus::after {
+	margin: 10px 10px;
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.submenu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.submenu a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+
+
+.video-bg
+.video-bg video {
+    font-size: 28px;
+    text-align: center;
+    min-width: 100%;
+	width: auto;
+	height: auto;
+    z-index: -1;
+}
+
+#people div {
+	float: left;
+	/* min-width: 200px; */
+	width: 200px;
+	height: 500px;
+	margin: 10px;
+}
+
+#people img{
+	width: 200px;
+	height: 200px;
+	/* min-width: 200px; */
+	/* width: 20%; */
+	margin-bottom: 0px;
+}
+
+
+
+footer {
+	color: #bbb;
+	text-indent: 20px;
+	padding: 40px 0 0 0;
+}
+
+
+
+
+
